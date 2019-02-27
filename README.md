@@ -2,6 +2,7 @@ The App designed is based on Model-View-ViewModel (MVVM)+Data Binding architectu
 
 I have used Room database + Live data combination
 
+
 Libraries Used
 
 1.Retrofit2<br />
