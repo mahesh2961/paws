@@ -1,0 +1,1 @@
+[{"navFile":"src/main/res/navigation/nav_paws.xml","javaFiles":["in.paws.fragment.DogCategoryListFragmentDirections","in.paws.fragment.DogSubCategoryListFragmentDirections","in.paws.fragment.DogSubCategoryListFragmentArgs","in.paws.fragment.ImageListFragmentDirections","in.paws.fragment.ImageListFragmentArgs","in.paws.fragment.ImageFragmentArgs"]}]

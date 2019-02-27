@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:startDestination="@+id/category_list_fragment">
+
+    <fragment
+        android:id="@+id/category_list_fragment"
+        android:name="in.paws.fragment.DogCategoryListFragment"
+        android:label="CATEGORY_LIST"
+        tools:layout="@layout/fragment_breed_list">
+        <action
+            android:id="@+id/action_category_to_sub_category"
+            app:destination="@id/sub_category"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <action
+            android:id="@+id/action_category_to_images"
+            app:destination="@id/sub_images"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/sub_category"
+        android:name="in.paws.fragment.DogSubCategoryListFragment"
+        android:label="Sub_Categories"
+        tools:layout="@layout/fragment_breed_list">
+
+        <action
+            android:id="@+id/action_subcategory_to_images"
+            app:destination="@id/sub_images"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+
+        <argument
+            android:name="category"
+            app:argType="string" />
+
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/sub_images"
+        android:name="in.paws.fragment.ImageListFragment"
+        android:label="Images"
+        tools:layout="@layout/fragment_category_images">
+
+        <action
+            android:id="@+id/action_image_to_full_image"
+            app:destination="@id/full_image_fragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+             />
+
+        <argument
+            android:name="category"
+            app:argType="string" />
+
+    </fragment>
+
+    <fragment
+    android:id="@+id/full_image_fragment"
+    android:name="in.paws.fragment.ImageFragment"
+    android:label="Images"
+    tools:layout="@layout/fragment_image">
+
+    <argument
+        android:name="imageUrl"
+        app:argType="string" />
+
+</fragment>
+
+
+</navigation>

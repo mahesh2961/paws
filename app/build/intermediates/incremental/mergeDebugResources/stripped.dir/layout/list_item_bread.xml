@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+                 
+                                
+                                                      
+                 
+                      
+                                                 
+                 
+                            
+                                                             
+           
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:background="@android:color/white"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="4dp"
+                                           android:tag="layout/list_item_bread_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/paws_item_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/paws_item_image_height"
+            android:tag="binding_1"                            
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:layout_below="@id/paws_item_image"
+            android:id="@+id/paws_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:layout_marginStart="@dimen/margin_small"
+            android:layout_marginTop="@dimen/margin_small"
+            android:tag="binding_2"                       
+            android:textAppearance="?attr/textAppearanceListItem"
+            tools:text="Tomato"/>
+           <TextView
+               android:layout_alignParentRight="true"
+               android:layout_below="@id/paws_item_image"
+               android:id="@+id/paws_sub_breed_count"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:textColor="@android:color/holo_green_dark"
+               android:layout_marginBottom="@dimen/margin_normal"
+               android:layout_marginEnd="@dimen/margin_small"
+               android:layout_marginStart="@dimen/margin_small"
+               android:layout_marginTop="@dimen/margin_small"
+               android:tag="binding_3"                             
+               android:textAppearance="?attr/textAppearanceListItem"
+               tools:text="Tomato"/>
+
+
+
+       </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+         
