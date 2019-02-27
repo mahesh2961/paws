@@ -38,7 +38,6 @@ class DogCategoryListFragment : BaseListFragment()
 
     override fun initializeViewModel(factory: ViewModelProvider.Factory): BaseCategoryViewModel {
         model= ViewModelProviders.of(this, factory).get(DogCategoryViewModel::class.java)
-        binding.pawsList.setTag(false)
         return model;
     }
 
